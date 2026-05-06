@@ -11,11 +11,10 @@ const KATEGORI = {
   konten: 'Buat 3 prompt untuk membuat konten media sosial yang viral',
   coding: 'Buat 3 prompt untuk membantu programmer lebih produktif',
   ai: 'Buat 3 prompt unik dan kreatif untuk eksplorasi AI',
-};
-
+  forex 'Buat 3 sinyal trading forex menggunakan analisis SMC (Smart Money Concept), ICT (Inner Circle Trader), dan Alchemist. Setiap sinyal harus mencakup: pair yang ditradingkan, identifikasiOrder Block, Break of Structure (BOS), Change of Character (CHOCH), Fair Value Gap (FVG), liquidity sweep, konfluensi multi-timeframe, entry point, stop loss, takeprofit 1 dan take profit 2, risk/reward ratio, sesi trading yang disarankan (London/New York), dan penjelasan singkat alasan entry.',
 async function tanyaAI(messages) {
   const res = await groq.chat.completions.create({
-    model: 'llama-3.3-70b-versatile
+    model: 'llama-3.3-70b-versatile'
     messages: [
       { role: 'system', content: 'Kamu asisten AI yang ramah dan menjawab dalam Bahasa Indonesia.' },
       ...messages
