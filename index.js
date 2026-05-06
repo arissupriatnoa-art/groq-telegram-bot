@@ -15,7 +15,7 @@ const KATEGORI = {
 
 async function tanyaAI(messages) {
   const res = await groq.chat.completions.create({
-    model: 'llama3-8b-8192',
+    model: 'llama-3.3-70b-versatile
     messages: [
       { role: 'system', content: 'Kamu asisten AI yang ramah dan menjawab dalam Bahasa Indonesia.' },
       ...messages
